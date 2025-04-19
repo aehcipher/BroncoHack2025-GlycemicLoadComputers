@@ -1,7 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://bg0p8ap084i5w"]
+[gd_scene load_steps=12 format=3 uid="uid://bg0p8ap084i5w"]
 
 [ext_resource type="Script" uid="uid://tw2xgmodve8q" path="res://night_scene.gd" id="1_enao0"]
 [ext_resource type="Texture2D" uid="uid://qamv6tmftu8k" path="res://table_pixelated.png" id="1_exke6"]
+[ext_resource type="Texture2D" uid="uid://cephxlenb6erd" path="res://pencil_pixelated.png" id="3_14rf8"]
+[ext_resource type="Texture2D" uid="uid://diu07w4ih4v1v" path="res://eraser_pixelated.png" id="4_a0i6q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_enao0"]
 texture = ExtResource("1_exke6")
@@ -253,6 +255,40 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_n7aiw")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_14rf8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_a0i6q")
 text = "Sign Off"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(585, 225)
+rotation = -0.392699
+scale = Vector2(0.41625, 0.43633)
+texture = ExtResource("3_14rf8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(642, 259)
+rotation = -2.33176
+scale = Vector2(0.0717746, 0.075237)
+texture = ExtResource("4_a0i6q")
+
+[node name="Label11" type="Label" parent="."]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 344.0
+offset_right = 690.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+vertical_alignment = 1
+
+[node name="Label12" type="Label" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 414.0
+offset_right = 707.0
+offset_bottom = 449.0
+theme_override_colors/font_color = Color(0.870588, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Not Enough Money!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_PayMortgage_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_payFood_pressed"]
