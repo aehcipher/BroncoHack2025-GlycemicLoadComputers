@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=4 uid="uid://dv6xfr22y0srw"]
+[gd_scene load_steps=13 format=4 uid="uid://dv6xfr22y0srw"]
 
 [ext_resource type="Texture2D" uid="uid://b5bmnmuqv048b" path="res://art/tileset/Room_Builder_Walls_48x48.png" id="2_71j4m"]
 [ext_resource type="Texture2D" uid="uid://bahf2eesqqnt7" path="res://art/tileset/Room_Builder_Floors_48x48.png" id="3_qfnet"]
 [ext_resource type="Texture2D" uid="uid://bv2ej5ttf8a7t" path="res://art/objects/24_Ice_Cream_Shop_48x48.png" id="4_71j4m"]
 [ext_resource type="Texture2D" uid="uid://dhg5oqnki7yu4" path="res://art/tileset/Room_Builder_3d_walls_48x48.png" id="4_i7141"]
 [ext_resource type="Texture2D" uid="uid://dgrd46xaqnbp4" path="res://art/objects/12_Kitchen_48x48.png" id="5_71j4m"]
+[ext_resource type="PackedScene" uid="uid://bllqov7i62ey8" path="res://character_body_2d.tscn" id="6_qfnet"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7r4gi"]
 texture = ExtResource("2_71j4m")
@@ -234,3 +235,7 @@ y_sort_enabled = true
 use_parent_material = true
 tile_map_data = PackedByteArray("AAApAAMABAAAAA8AAAAUAAMABAAAAA8AAAAWAAQABAADABAAAAAXAAEABAADABAAAAARAAEABAAGABAAAAASAAQABAAGABAAAAAmAAQABAAGABAAAAAnAAIABAAGABAAAAAsAAIABAAMABEAAAAPAPr/BAAPABkAAAATAPr/BAAeABwAAAAbAPr/BAAgABAAAAAlAPr/BAAgABAAAAAeAO//BAAYAAEAAAAWAO//BAAMAAEAAAAmAO//BAASAAEAAAARAPH/BgAbAEYAAAAOAPH/BgAbAEYAAAAtAPH/BAAAAAkAAAA=")
 tile_set = SubResource("TileSet_q5onr")
+
+[node name="Player" parent="." instance=ExtResource("6_qfnet")]
+y_sort_enabled = true
+position = Vector2(474, 445)
