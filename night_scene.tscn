@@ -1,0 +1,260 @@
+[gd_scene load_steps=10 format=3 uid="uid://bg0p8ap084i5w"]
+
+[ext_resource type="Script" uid="uid://tw2xgmodve8q" path="res://night_scene.gd" id="1_enao0"]
+[ext_resource type="Texture2D" uid="uid://qamv6tmftu8k" path="res://table_pixelated.png" id="1_exke6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_enao0"]
+texture = ExtResource("1_exke6")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exke6"]
+bg_color = Color(0.824546, 0.693264, 0.516061, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enao0"]
+bg_color = Color(0.735337, 0.601351, 0.416243, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_exke6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n7aiw"]
+bg_color = Color(0, 0.564706, 0.0823529, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_14rf8"]
+bg_color = Color(2.57199e-07, 0.134735, 0.00314394, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a0i6q"]
+bg_color = Color(0, 0.729412, 0.0823529, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="NightScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_enao0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_enao0")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 115.0
+offset_right = 400.0
+offset_bottom = 512.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_exke6")
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 749.0
+offset_top = 115.0
+offset_right = 1073.0
+offset_bottom = 512.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_enao0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 129.0
+offset_right = 400.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Today's Earnings"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 749.0
+offset_top = 129.0
+offset_right = 1041.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Debts"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 222.0
+offset_right = 341.0
+offset_bottom = 487.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Ice Cream Sold   $
+
+Mistakes Made  -$
+
+
+
+Total $"
+horizontal_alignment = 3
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 199.0
+offset_right = 1018.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Pay Mortgage   -$ 30
+
+Food for Family  -$ 20"
+horizontal_alignment = 3
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 222.0
+offset_right = 397.0
+offset_bottom = 258.0
+theme_override_colors/font_color = Color(0.192364, 0.422228, 1, 1)
+theme_override_font_sizes/font_size = 25
+text = "T"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 300.0
+offset_right = 397.0
+offset_bottom = 336.0
+theme_override_colors/font_color = Color(0.823774, 0.240893, 0.276781, 1)
+theme_override_font_sizes/font_size = 25
+text = "T"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 451.0
+offset_right = 397.0
+offset_bottom = 487.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "T"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label9" type="Label" parent="."]
+layout_mode = 0
+offset_left = 975.0
+offset_top = 351.0
+offset_right = 1032.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "T"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="."]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 351.0
+offset_right = 983.0
+offset_bottom = 386.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Other Expense  -$"
+horizontal_alignment = 3
+
+[node name="Label10" type="Label" parent="."]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 467.0
+offset_right = 974.0
+offset_bottom = 502.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Sign _______________"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 200.0
+offset_right = 1067.0
+offset_bottom = 232.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.921569, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_exke6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7aiw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14rf8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0i6q")
+text = "Pay"
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 275.0
+offset_right = 1067.0
+offset_bottom = 307.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.921569, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_exke6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7aiw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14rf8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0i6q")
+text = "Pay"
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 350.0
+offset_right = 1067.0
+offset_bottom = 382.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.921569, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_exke6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7aiw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14rf8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0i6q")
+text = "Pay"
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 995.0
+offset_top = 464.0
+offset_right = 1067.0
+offset_bottom = 496.0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0.921569, 0, 1)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_exke6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_n7aiw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_14rf8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0i6q")
+text = "Sign Off"
+
+[connection signal="pressed" from="Button" to="." method="_on_PayMortgage_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_payFood_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_payOther_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_SignOff_pressed"]
