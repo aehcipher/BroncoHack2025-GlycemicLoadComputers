@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://owhm6eh8o3o0"
-path="res://.godot/imported/Body_48x48_02(1).png-bc216b37d2d696389e729d4f11d4bc1b.ctex"
+uid="uid://dwk37ny4a4o1d"
+path="res://.godot/imported/Ice_Cream_Shop_Design_layer_1_48x48.png-071ab7bf6973ee8680e6b343e3b55cca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Body_48x48_02(1).png"
-dest_files=["res://.godot/imported/Body_48x48_02(1).png-bc216b37d2d696389e729d4f11d4bc1b.ctex"]
+source_file="res://art/tileset/Ice_Cream_Shop_Design_layer_1_48x48.png"
+dest_files=["res://.godot/imported/Ice_Cream_Shop_Design_layer_1_48x48.png-071ab7bf6973ee8680e6b343e3b55cca.ctex"]
 
 [params]
 

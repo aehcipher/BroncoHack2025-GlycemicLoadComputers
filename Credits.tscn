@@ -1,0 +1,118 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbbqry5sksq1p"]
+
+[ext_resource type="Script" uid="uid://dm72vwlhpeefn" path="res://credits.gd" id="1_4qwwl"]
+[ext_resource type="FontFile" uid="uid://dc3mlx8jtmd11" path="res://runescape_uf.ttf" id="1_ynf4x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4qwwl"]
+bg_color = Color(0.443137, 0.607843, 0.843137, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_obosj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2yj5"]
+bg_color = Color(0.864675, 0.864675, 0.864675, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xic2l"]
+bg_color = Color(0.572989, 0.572988, 0.572989, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s70hm"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4qwwl")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4qwwl")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -134.5
+offset_top = 37.0
+offset_right = 134.5
+offset_bottom = 137.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -5
+theme_override_constants/shadow_offset_y = 10
+theme_override_fonts/font = ExtResource("1_ynf4x")
+theme_override_font_sizes/font_size = 100
+text = "Credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 567.0
+offset_right = 195.0
+offset_bottom = 628.0
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ynf4x")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_obosj")
+theme_override_styles/hover = SubResource("StyleBoxFlat_k2yj5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xic2l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_s70hm")
+text = "Back"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -467.0
+offset_top = 156.0
+offset_right = 467.0
+offset_bottom = 514.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 29
+text = "Made By: Glycemic Load Computers
+assets: LimeZu (https://limezu.itch.io/)"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 610.0
+offset_right = 1121.0
+offset_bottom = 633.0
+text = "RIP rollicannoli_"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button2" to="." method="_on_backToMenu_pressed"]
