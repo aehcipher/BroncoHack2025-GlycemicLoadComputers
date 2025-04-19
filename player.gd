@@ -3,12 +3,22 @@ extends Area2D
 @export var speed = 200 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
 var facing_direction = 3 # What direction character is facing. 1=up, 2=left, 3=down, 4=right
+var is_picking = false
 
 # Initializes on start
 func _ready():
 	screen_size = get_viewport_rect().size
+	$AnimatedSprite2D.connect("animation_finished", Callable(self, "_on_animation_finished"))
+
+func _on_animation_finished():
+	if is_picking:
+		is_picking = false
+
 	
 func _process(delta):
+	if is_picking:
+		return  # Don't interrupt the pick animation
+		
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("right"):
 		velocity.x += 1
@@ -51,4 +61,16 @@ func _process(delta):
 			$AnimatedSprite2D.animation = "idleLeft"
 		elif facing_direction == 4:
 			$AnimatedSprite2D.animation = "idleRight"
+		$AnimatedSprite2D.play()
+	# play pick up animations (test)
+	if Input.is_action_just_pressed("interact") and not is_picking:
+		is_picking = true
+		if facing_direction == 1:
+			$AnimatedSprite2D.animation = "pickUp"
+		elif facing_direction == 2:
+			$AnimatedSprite2D.animation = "pickLeft"
+		elif facing_direction == 3:
+			$AnimatedSprite2D.animation = "pickDown"
+		elif facing_direction == 4:
+			$AnimatedSprite2D.animation = "pickRight"
 		$AnimatedSprite2D.play()
