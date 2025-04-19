@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dsnlh0cj0147g"]
+[gd_scene load_steps=8 format=3 uid="uid://df1ssq3lyxepr"]
 
 [ext_resource type="FontFile" uid="uid://dc3mlx8jtmd11" path="res://runescape_uf.ttf" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://dmukxrih7wuj1" path="res://main_menu.gd" id="1_7vrkn"]
@@ -128,7 +128,7 @@ theme_override_constants/shadow_offset_x = -5
 theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("1_06t4h")
 theme_override_font_sizes/font_size = 100
-text = "[]"
+text = "Dished Served Cold"
 horizontal_alignment = 1
 vertical_alignment = 1
 

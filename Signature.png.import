@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://owhm6eh8o3o0"
-path="res://.godot/imported/Body_48x48_02(1).png-bc216b37d2d696389e729d4f11d4bc1b.ctex"
+uid="uid://dhjfe88ove0t8"
+path="res://.godot/imported/Signature.png-7ac7a49ad05f333ee4972e2091a3920f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Body_48x48_02(1).png"
-dest_files=["res://.godot/imported/Body_48x48_02(1).png-bc216b37d2d696389e729d4f11d4bc1b.ctex"]
+source_file="res://Signature.png"
+dest_files=["res://.godot/imported/Signature.png-7ac7a49ad05f333ee4972e2091a3920f.ctex"]
 
 [params]
 

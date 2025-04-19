@@ -1,4 +1,4 @@
-extends Area2D
+extends CharacterBody2D
 
 @export var speed = 200 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
@@ -52,3 +52,11 @@ func _process(delta):
 		elif facing_direction == 4:
 			$AnimatedSprite2D.animation = "idleRight"
 		$AnimatedSprite2D.play()
+
+
+func _on_timer_timeout() -> void:
+	get_tree().change_scene_to_file("res://night_scene.tscn")
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://night_scene.tscn")

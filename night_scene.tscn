@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bg0p8ap084i5w"]
+[gd_scene load_steps=12 format=3 uid="uid://dh2pg1u3a82fo"]
 
 [ext_resource type="Script" uid="uid://tw2xgmodve8q" path="res://night_scene.gd" id="1_enao0"]
 [ext_resource type="Texture2D" uid="uid://qamv6tmftu8k" path="res://table_pixelated.png" id="1_exke6"]
@@ -131,7 +131,7 @@ offset_right = 397.0
 offset_bottom = 258.0
 theme_override_colors/font_color = Color(0.192364, 0.422228, 1, 1)
 theme_override_font_sizes/font_size = 25
-text = "T"
+text = "80"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -143,7 +143,7 @@ offset_right = 397.0
 offset_bottom = 336.0
 theme_override_colors/font_color = Color(0.823774, 0.240893, 0.276781, 1)
 theme_override_font_sizes/font_size = 25
-text = "T"
+text = "10"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -155,7 +155,7 @@ offset_right = 397.0
 offset_bottom = 487.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
-text = "T"
+text = "70"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -167,7 +167,7 @@ offset_right = 1032.0
 offset_bottom = 387.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
-text = "T"
+text = "30"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -287,6 +287,27 @@ offset_bottom = 449.0
 theme_override_colors/font_color = Color(0.870588, 0, 0, 1)
 theme_override_font_sizes/font_size = 25
 text = "Not Enough Money!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label13" type="Label" parent="."]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 470.0
+offset_right = 972.0
+offset_bottom = 493.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "rolli_cannoli :(((("
+
+[node name="Label14" type="Label" parent="."]
+layout_mode = 0
+offset_left = 361.0
+offset_top = 516.0
+offset_right = 836.0
+offset_bottom = 579.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "End of Demo, Thanks for Playing!"
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -11,6 +11,8 @@ func _ready():
 	
 	label.text = "Money Left: " + str(totalMoney)
 	$Label12.visible = false
+	$Label13.visible = false
+	$Label14.visible = false
 
 func update_money(new_value):
 	totalMoney = totalMoney + new_value
@@ -49,5 +51,6 @@ func _on_SignOff_pressed() -> void:
 		$Label12.visible = true
 	else:
 		$Label12.visible = false
-		#switch to next scene
+		$Label13.visible = true
+		$Label14.visible = true
 		
